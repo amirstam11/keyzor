@@ -1,0 +1,109 @@
+:root{
+    --navBar-color: #454e53;
+    --pointsOff-color: #68737a;
+    --pointsOn-color: #8f9fa8;
+    --text-color: #1e2931;
+    --feild-color: #b3bcc1;
+}
+body{
+    background-image: url(../photos/other/keyboards_city_night.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.point{
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    background-color: var(--pointsOff-color);
+}
+#p1{
+    background-color: var(--pointsOn-color);
+    box-shadow: 0 0 20px var(--pointsOn-color);
+}
+#p2, #p3{
+    background-color: var(--pointsOff-color);
+    box-shadow: 0 0 0 var(--pointsOn-color);
+}
+#progress_points{
+    display: flex;
+    justify-content: space-between;
+    width: 14vw;
+    position: absolute;
+    left: 43vw;
+    top: 9vh;
+}
+#main_conteiner{
+    position: absolute;
+    top: 15vh;
+    left: 35vw;
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 7%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 7%;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+#title{
+    font-size: 2.25vw;
+    font-family: "DM sans", sans-serif;
+    color: var(--text-color);
+}
+#customer{
+    display: flex;
+}
+#payment, #sending{
+    display: none;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 40vh;
+    justify-content: space-between;
+    align-items: center;
+}
+h6{
+    margin: 0;
+    font-size: 1.4vw;
+}
+input{
+    width: 100%;
+    padding: 1.3vh;
+    border-radius: 1vh;
+    background-color: var(--feild-color);
+    border: solid 2px transparent;
+    transition: 3ms;
+}
+.field{
+    font-family: "DM sans", sans-serif;
+    color: var(--navBar-color);
+}
+.f1, .f4{
+    width: 100%;
+}
+.f2, .f3{
+    width: 48%;
+}
+#next{
+    width: 90%;
+    height: 8%;
+    border-radius: 1vh;
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: #1e2931;
+    background-color: var(--navBar-color);
+    letter-spacing: 2px;
+}

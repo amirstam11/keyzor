@@ -1,0 +1,178 @@
+:root{
+    --title-color: #494949;
+    --subtitle-color: #F9F3EF;
+    --text-color: #D2C1B6;
+}
+body{
+    background-image: url(../photos/other/keyzor_z80.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    transition: 1s ease;
+}
+body.rgb{
+    background-image: url(../photos/other/keyzor_z80_rgb.png);
+}
+img{
+    display: flex;
+    position: absolute;
+    height: 7%;
+    top: 5vh;
+    left: 5vw;
+}
+#nav_bar{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    left: 55%;
+    top: 3%;
+    list-style: none;
+    gap: 50%;
+}
+.up_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7vw;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+    padding: 7px;
+    border-radius: 5px;
+    transition: border-color 1s ease;
+}
+.up_btn:hover{
+    border-color: var(--title-color);
+    box-shadow: 0 0 10px var(--title-color);
+}
+.up_btn:not(:hover){
+    transition-duration: 0.3s;
+}
+h1{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-family: "Audiowide", sans-serif;
+    font-size: 5.5vw;
+    font-weight: 600;
+    color: var(--title-color);
+    text-shadow: 0 0 50px var(--title-color);
+    transition: 1s ease;
+}
+h4{
+    display: flex;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-size: 1.85vw;
+    font-weight: 600;
+    color: var(--subtitle-color);
+    text-shadow: 0 0 20px var(--subtitle-color);
+}
+p{
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.main_btn{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    gap: 20px;
+    top: 67%;
+    left: 5%;
+}
+#view_products{
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--title-color);
+    border: 2px solid var(--title-color);
+    padding: 7px 20px;
+    border-radius: 25px;
+    background-color: transparent;
+    box-shadow: 0 0 10px var(--title-color);
+    transition: all 0.3s ease;
+}
+#view_products:hover{
+    background-color: var(--title-color);
+    color: var(--subtitle-color);
+    transform: translateY(-5px);
+}
+#Learn_more{
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--subtitle-color);
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 var(--title-color);
+    padding: 7px 15px;
+    border-radius: 25px;
+    transition: border-color 0.3s ease, box-shadow 0.5s ease;
+}
+#Learn_more:hover{
+    border-color: var(--title-color);
+    box-shadow: 0 0 10px var(--title-color);
+    transition-duration: 0.3s, 0.5s;
+}
+#Learn_more:not(:hover){
+    transition-duration: 0s, 0s;
+}
+.RGB_switch{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 85%;
+    left: 5%;
+    width: 5.8vw;
+}
+.RGB_switch input{
+    display: none;
+}
+.RGB_switch span{
+    position: absolute;
+    cursor: pointer;
+    background: var(--text-color);
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    width: 3vw;
+    height: 1.5vw;
+    transition: 0.3s;
+}
+.RGB_switch span::before {
+    content: "";
+    position: absolute;
+    width: 1.2vw;
+    height: 1.2vw;
+    left: 0.15vw;
+    top: 0.15vw;
+    background-color: #494949;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.RGB_switch input:checked + span::before {
+    transform: translateX(1.5vw);
+}
+.RGB_switch input:checked + span {
+    background-color: var(--title-color);
+}
+#RGB_text{
+    display: flex;
+    position: absolute;
+    top: 82%;
+    left: 8.5%;
+    color: var(--subtitle-color);
+    font-weight: 700;
+    font-size: 0.75vw;
+}

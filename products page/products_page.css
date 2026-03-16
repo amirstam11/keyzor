@@ -1,0 +1,108 @@
+:root{
+    --title-color: #D2C1B6;
+    --price-color: #F9F3EF;
+    --topbar-color: #454e53;
+    --background-color: #4e585e;
+}
+body{
+    background-image: linear-gradient(var(--background-color), var(--topbar-color), var(--background-color));
+    font-family: sans-serif;
+    margin: 0;
+    padding-top: 20vh;
+    overflow-x: hidden;
+}
+#top_bar{
+    position: fixed;
+    display: flex;
+    top: 0;
+    background-color: var(--topbar-color);
+    width: 100vw;
+    height: 8vh;
+    box-shadow: 0 4px 20px black;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+#our_collection{
+    margin: 0;
+    position: absolute;
+    font-family: "Audiowide", sans-serif;
+    font-size: 3vw;
+    letter-spacing: 2px;
+    color: var(--title-color);
+}
+#home{
+    position: absolute;
+    right: 3%;
+    color: var(--price-color);
+}
+.material-icons-outlined{
+    font-size: 2.5vw; 
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    line-height: 1.5;
+    gap: 8.75vw;
+    row-gap: 13vh;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18vh;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75vw;
+    height: 65vh;
+    width: 22vw;
+    border-radius: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.cards:hover{
+    background-color: rgba(255, 255, 255, 0.082);
+}
+.image{
+    height: 18vw;
+    width: 18vw;
+    border-radius: 40px;
+    margin: 0;
+}
+.name{
+    font-family: "DM sans", sans-serif;
+    font-size: 1.4vw;
+    margin: 5px;
+    color: var(--title-color);
+}
+.price{
+    font-family: "Space Mono", sans-serif;
+    font-size: 1.4vw;
+    margin: 0;
+    color: var(--price-color);
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 3vw;
+    width: 6vw;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 0 #313f47;
+    background-color: transparent;
+    color: #313f47;
+    font-family: "DM sans", sans-serif;
+    font-size: 1.4vw;
+    font-weight: 600;
+    transition: 0.2s ease-in;
+}
+.info:hover{
+    border-color: #313f47;
+    box-shadow: 0 0 20px #313f47;
+}

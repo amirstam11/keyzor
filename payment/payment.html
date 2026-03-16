@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+        <script src="payment.js"></script>
+        <link rel="stylesheet" href="payment.css">
+        <link rel="icon" type="image/png" href="..\..\photos\other\favicon-32x32.png">
+        <title>Payment</title>
+    </head>
+    <body>
+        <div id="progress_points">
+            <div class="point" id="p1"></div>
+            <div class="point" id="p2"></div>
+            <div class="point" id="p3"></div>
+        </div>
+        <div id="main_conteiner">
+            <h3 id="title">Customer Details</h3>
+            <div class="container" id="customer">
+                <div class="field f1" id="phone">
+                    <h6>Phone Number</h6>
+                    <input type="tel" id="phone-box">
+                </div>
+                <div class="field f2" id="firstname">
+                    <h6>First Name</h6>
+                    <input type="text" id="firstname-box">
+                </div>
+                <div class="field f3" id="lastname">
+                    <h6>Last Name</h6>
+                    <input type="text" id="lastname-box">
+                </div>
+                <div class="field f4" id="email">
+                    <h6>Email</h6>
+                    <input type="email" id="email-box">
+                </div>
+            </div>
+            <div class="container" id="sending">
+                <div class="field f1" id="city">
+                    <h6>City</h6>
+                    <input type="text" id="city-box">
+                </div>
+                <div class="field f2" id="street">
+                    <h6>Street</h6>
+                    <input type="text" id="street-box">
+                </div>
+                <div class="field f3" id="zipcode">
+                    <h6>Zip Code</h6>
+                    <input type="number" id="zipcode-box">
+                </div>
+                <div class="field f4" id="notes">
+                    <h6>Notes To The Messenger</h6>
+                    <input type="text" id="notes-box">
+                </div>
+            </div>
+            <div class="container" id="payment">
+                <div class="field f1" id="credit">
+                    <h6>Credit Number</h6>
+                    <input type="text" id="credit-box">
+                </div>
+                <div class="field f2" id="validity">
+                    <h6>Validity</h6>
+                    <input type="text" id="validity-box" placeholder="MM/YY">
+                </div>
+                <div class="field f3" id="cvv">
+                    <h6>CVV</h6>
+                    <input type="number" id="cvv-box">
+                </div>
+                <div class="field f4" id="id">
+                    <h6>ID Number</h6>
+                    <input type="text" id="id-box">
+                </div>
+            </div>
+            <button id="next" type="button">Next</button>
+        </div>
+    </body>
+</html>
