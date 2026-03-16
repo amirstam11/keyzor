@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function(){
         {
             if (paymentCheck())
             {
-                window.location.href = "../home page/index.html";
+                window.location.href = "../index.html";
                 alert("The order was placed successfully")
             }
         }
